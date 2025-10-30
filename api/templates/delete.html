@@ -1,0 +1,16 @@
+{% with messages = get_flashed_messages() %}
+   {% if messages %}
+      <script>
+         alert("{{messages[-1]}}")  // flash() 함수를 통해 보낸 메시지는 가장 마지막에 들어있음
+      </script>
+   {% endif %}
+{% endwith %}
+
+
+
+비밀번호를 입력하세요 <br>
+<form method="POST" action="/delete/{{data._id}}">
+  <input type="password" name="password"><br>
+  <a href="/">취소</a>
+  <input type="submit" value="확인">
+</form>

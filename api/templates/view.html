@@ -1,0 +1,7 @@
+{{data.title}} <br>
+{{data.writer}} <br>
+{% autoescape false %}{{data.contents}}{% endautoescape %} <br>
+<a href="/">전체글</a>
+<a href="/delete/{{data._id}}">삭제</a>>
+<a href="/write">글쓰기</a>
+
